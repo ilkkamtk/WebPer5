@@ -14,8 +14,8 @@ const openModal = (evt) => {
 
 const closeModal = (evt) => {
   evt.preventDefault();
-  console.log(this.parentElement);
-  this.parentElement.classList.replace('show', 'hide');
+  console.log(evt.currentTarget.parentElement);
+  evt.currentTarget.parentElement.classList.replace('show', 'hide');
 };
 
 openButtons.forEach((button) => {
