@@ -3,8 +3,8 @@ const closeButtons = document.querySelectorAll('.close-modal');
 
 const openModal = (evt) => {
   evt.preventDefault();
-  console.log(this.href);
-  fetch(this.href).then((response) => {
+  console.log(evt.currentTarget);
+  fetch(evt.currentTarget.href).then((response) => {
     return response.json();
   }).then((json) => {
     document.querySelector('.modal-content').innerHTML = `<img src="${json.image}"><p>${json.text}</p>`;
