@@ -7,10 +7,8 @@ const openModal = (evt) => {
   fetch(this.href).then((response) => {
     return response.json();
   }).then((json) => {
-    document.querySelector('.modal-content').innerHTML = '<img src="' +
-        json.image + '"><p>' + json.text + '</p>';
-    document.querySelector('.modal').classList.remove('hide');
-    document.querySelector('.modal').classList.add('show');
+    document.querySelector('.modal-content').innerHTML = `<img src="${json.image}"><p>${json.text}</p>`;
+    document.querySelector('.modal').classList.replace('hide', 'show');
   });
 };
 
