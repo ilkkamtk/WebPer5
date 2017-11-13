@@ -39,7 +39,7 @@ chmod -R 755 kansio
         };
     // käynnistetään fetch. Tässä tapauksessa palvelin kertoo
     // uploudin onnistumisen/epäonnistumisen tekstillä. Voi olla myös esim json.
-    fetch('upload.php', ).then((response) => {
+    fetch('upload.php', settings).then((response) => {
         return response.text();
     }).then((text) => {
         console.log(text);
