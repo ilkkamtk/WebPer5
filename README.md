@@ -5,7 +5,7 @@
 * Muokkaa task_a.html ja upload.php tiedostoja:
   * Toimi tämän esimerkin mukaan: http://www.w3schools.com/php/php_file_upload.asp
 * shell.metropolia.fi:llä php.ini:n muuttaminen ei onnistu, joten täytyy käyttää `htaccess` tiedostoa
-  * ko. tiedosto on jo valmiina, sieltä täytyy ottaa kommentit pois riviltä, jossa on `AddHandler cgi-script .php`
+  * ko. tiedosto on tässä harjoituksessa jo valmiina, sieltä täytyy ottaa kommentit (#) pois riviltä, jossa on `AddHandler cgi-script .php`
   * ks. https://wiki.metropolia.fi/display/tietohallinto/Kotisivu-%2C+Shell-+ja+MySQL-palvelut
   * upload.php ja .htaccess tiedostojen oikeudet tulee olla (0)755
     * ks. https://tietohallinto.metropolia.fi/display/tietohallinto/HTTP+403+Forbidden
