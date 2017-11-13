@@ -9,7 +9,16 @@
   * ks. https://wiki.metropolia.fi/display/tietohallinto/Kotisivu-%2C+Shell-+ja+MySQL-palvelut
   * upload.php ja .htaccess tiedostojen oikeudet tulee olla (0)755
     * ks. https://tietohallinto.metropolia.fi/display/tietohallinto/HTTP+403+Forbidden
+    * Esim. Mac-terminaali:
+    ```
+    ssh tunnus@shell.metropolia.fi
+    cd public_html/kansio/kansio
+    chmod 755 tiedosto
     
+    // tai
+    
+    chmod -R 755 kansio
+    ```
 
 ## 2. Modernimpi versio
 
